@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body class="box-border">
+    <main
+      class="container flex flex-col items-center mt-11 ml-auto mr-auto bg-linear-65 from-purple-500 to-pink-500 w-[500px] p-2"
+    >
+      <div class="flex justify-between w-full">
+        <span class="text-white text-xl font-medium">Current Weather</span
+        ><span class="font-medium text-[20px] text-white">12:23</span>
+      </div>
+      <p class="bg-white h-0.5 w-full text-[1px] text-white">a</p>
+      <div class="mt-2 flex justify-center items-center h-10 gap-2">
+        <input
+          type="text"
+          placeholder="Enter city name"
+          class="outline-1 outline-amber-50 border-0 rounded flex text-center font-medium w-70"
+        />
+        <button
+          id="search"
+          class="p-0.5 border-[0.5px] rounded-full cursor-pointer bg-amber-50 opacity-80"
+        >
+          <img
+            src="https://img.icons8.com/?size=100&id=59878&format=png&color=000000"
+            width="20px"
+          />
+        </button>
+      </div>
+      <div class="m-4 text-5xl text-fuchsia-100">Ludhiana</div>
+      <section class="flex mt-5 w-full h-40 p-2.5">
+        <div class="flex justify-start w-1/2 pt-7">
+          <span class="ml-4 mr-1.5 relative top-5"
+            ><img src="./public/assets/mildcloudy.svg" width="45px"
+          /></span>
+
+          <span
+            id="temp"
+            class="text-6xl text-fuchsia-200 m-1 font-[weight:350]"
+            >34°</span
+          >
+          <span
+            class="text-gray-300 font-semibold text-2xl -translate-x-6 translate-y-8"
+            >C</span
+          >
+        </div>
+
+        <div
+          class="text-fuchsia-100 w-1/2 flex flex-col p-2.5 border-1 space-y-2"
+        >
+          <div class="flex justify-between">
+            <span>Humidity</span><span>300</span>
+          </div>
+          <hr class="opacity-70" />
+          <div class="flex justify-between">
+            <span>Wind</span><span>13 km/h</span>
+          </div>
+          <hr class="opacity-70" />
+          <div class="flex justify-between">
+            <span>Air Quality</span><span>Poor</span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script type="module" src="/src/main.js"></script>
+</html>
